@@ -1,0 +1,4 @@
+<layers>
+    <layer name="helene.intranet"
+           interface="helene.intranet.browser.interfaces.ILayer" />
+</layers>
