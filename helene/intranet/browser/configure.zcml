@@ -7,25 +7,21 @@
       interface=".interfaces.ILayer"
       name="helene.intranet"
       />
-  
-  
-  <!-- EXAMPLE:
-  <browser:viewlet
-      name="helene.someviewlet"
-      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-      class=".viewlets.MyViewlet"
-      layer=".interfaces.ILayer"
-      permission="zope2.View"
-      />
-  <include package="plone.app.contentmenu" />
+
   <browser:page
-      name="myview"
-      menu="plone_displayviews"
-      title="Galleria"
-      class=".myfile.MyView"
-      layer=".interfaces.ILayer"
-      permission="zope2.View"
-      />
-  -->
+        for="*"
+        class=".listing.RFSEListingRights"
+        name="edmlistingrights"
+        layer="review.rfsepolicy.interfaces.IRFSELayer"
+        permission="zope2.View" />
+
+
+  <browser:page
+        for="*"
+        class=".listing.HeleneListingOptions"
+        name="edmlistingoptions"
+        layer=".interfaces.ILayer"
+        permission="zope2.View" />
+
 
 </configure>
