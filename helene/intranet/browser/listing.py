@@ -1,4 +1,5 @@
 from collective.edm.listing.listingoptions import DefaultListingOptions
+from collective.edm.listing.listingrights import DefaultListingRights
 
 class HeleneListingRights(DefaultListingRights):
 

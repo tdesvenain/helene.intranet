@@ -10,9 +10,9 @@
 
   <browser:page
         for="*"
-        class=".listing.RFSEListingRights"
+        class=".listing.HeleneListingRights"
         name="edmlistingrights"
-        layer="review.rfsepolicy.interfaces.IRFSELayer"
+        layer=".interfaces.ILayer"
         permission="zope2.View" />
 
 
