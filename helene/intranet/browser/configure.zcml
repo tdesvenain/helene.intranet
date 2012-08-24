@@ -10,7 +10,7 @@
 
   <browser:page
         for="*"
-        class=".listing.HeleneListingRights"
+        class=".listing.ListingRights"
         name="edmlistingrights"
         layer=".interfaces.ILayer"
         permission="zope2.View" />
@@ -18,10 +18,17 @@
 
   <browser:page
         for="*"
-        class=".listing.HeleneListingOptions"
+        class=".listing.ListingOptions"
         name="edmlistingoptions"
         layer=".interfaces.ILayer"
         permission="zope2.View" />
 
+  <browser:viewlet
+        for="Products.CMFCore.interfaces.IFolderish"
+        class=".viewlets.EmptyDocumentByLineViewlet"
+        viewletmanager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+        name="plone.belowcontenttitle.documentbyline"
+        layer=".interfaces.ILayer"
+        permission="zope2.View" />
 
 </configure>
