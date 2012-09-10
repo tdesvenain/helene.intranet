@@ -18,7 +18,7 @@ class ListingRights(DefaultListingRights):
         if not self.context.isTrashcanOpened():
             return False
 
-        return super(ListingRights, self).globally_can_cut(brains)
+        return self.globally_can_delete(brains)
 
     def globally_show_state(self, brains):
         return False
