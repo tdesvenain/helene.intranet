@@ -20,6 +20,9 @@ class ListingRights(DefaultListingRights):
 
         return self.globally_can_cut(brains)
 
+    def globally_show_state(self, brains):
+        return False
+
 
 class ListingOptions(DefaultListingOptions):
 
