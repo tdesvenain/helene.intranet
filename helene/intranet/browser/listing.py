@@ -9,16 +9,21 @@ class ListingRights(DefaultListingRights):
         """
         return False
 
+    def globally_can_cut(self, brains):
+        """View cut column
+        """
+        return self.candeletecontents
+
     def globally_can_delete(self, brains):
         if not self.context.isTrashcanOpened():
             return False
 
-        return super(ListingOptions, self).globally_can_delete()
+        return super(ListingRights, self).globally_can_cut(brains)
 
 
 class ListingOptions(DefaultListingOptions):
 
-    sort_mode = 'auto'
+    sort_mode = 'manual'
     default_sort_on = 'sortable_title'
     default_sort_order = 'asc'
     allow_edit_popup = True
