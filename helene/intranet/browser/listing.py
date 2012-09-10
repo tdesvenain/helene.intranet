@@ -18,7 +18,7 @@ class ListingRights(DefaultListingRights):
         if not self.context.isTrashcanOpened():
             return False
 
-        return self.globally_can_delete(brains)
+        return self.globally_can_cut(brains)
 
 
 class ListingOptions(DefaultListingOptions):
