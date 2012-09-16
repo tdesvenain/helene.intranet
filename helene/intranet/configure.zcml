@@ -20,18 +20,18 @@
       />
   <include file="upgrades.zcml" />
 
-  <include package="Products.CMFPlone" />
-  <include package="collective.favorites" />
-  <include package="collective.portlet.customizablerecent" />
-  <include package="collective.usernamelogger" />
   <include package="Products.AROfficeTransforms" />
+  <include package="Products.CMFPlone" />
   <include package="Products.OpenXml" />
   <include package="atreal.monkeyplone" />
+  <include package="collective.documentviewer" />
   <include package="collective.edm.listing" />
-  <include package="collective.portlet.customizablerecent" />
+  <include package="collective.favorites" />
   <include package="collective.mtrsetup" />
-  <include package="ecreall.helpers.upgrade" />
+  <include package="collective.portlet.customizablerecent" />
+  <include package="collective.usernamelogger" />
   <include package="ecreall.helpers.testing" />
+  <include package="ecreall.helpers.upgrade" />
   <include package="ecreall.trashcan" />
 
   <include package="iw.rejectanonymous" />
