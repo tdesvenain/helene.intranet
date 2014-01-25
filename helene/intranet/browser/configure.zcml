@@ -8,20 +8,8 @@
       name="helene.intranet"
       />
 
-  <browser:page
-        for="*"
-        class=".listing.ListingRights"
-        name="edmlistingrights"
-        layer=".interfaces.ILayer"
-        permission="zope2.View" />
-
-
-  <browser:page
-        for="*"
-        class=".listing.ListingOptions"
-        name="edmlistingoptions"
-        layer=".interfaces.ILayer"
-        permission="zope2.View" />
+  <adapter factory=".listing.ListingRights" />
+  <adapter factory=".listing.ListingOptions" />
 
   <browser:viewlet
         for="Products.CMFCore.interfaces.IFolderish"

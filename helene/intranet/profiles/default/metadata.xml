@@ -11,5 +11,6 @@
     <dependency>profile-collective.documentviewer:default</dependency>
     <dependency>profile-collective.portlet.customizablerecent:default</dependency>
     <dependency>profile-ecreall.trashcan:default</dependency>
+    <dependency>profile-ecreall.handleexternaledition:default</dependency>
   </dependencies>
 </metadata>

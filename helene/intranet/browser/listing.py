@@ -1,8 +1,16 @@
+from zope.interface import Interface
+from zope.component import adapts
+
 from collective.edm.listing.listingoptions import DefaultListingOptions
 from collective.edm.listing.listingrights import DefaultListingRights
+from helene.intranet.browser.interfaces import ILayer
+from Products.CMFCore.interfaces._content import IFolderish
+from collective.edm.listing.interfaces import IEDMListing
 
 class ListingRights(DefaultListingRights):
     """ """
+    adapts(IFolderish, ILayer, Interface, IEDMListing)
+
 
     def globally_show_author(self):
         """View cut column
@@ -25,6 +33,7 @@ class ListingRights(DefaultListingRights):
 
 
 class ListingOptions(DefaultListingOptions):
+    adapts(IFolderish, ILayer, Interface, IEDMListing)
 
     sort_mode = 'manual'
     default_sort_on = 'sortable_title'

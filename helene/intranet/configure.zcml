@@ -30,6 +30,7 @@
   <include package="collective.mtrsetup" />
   <include package="collective.portlet.customizablerecent" />
   <include package="collective.usernamelogger" />
+  <include package="ecreall.handleexternaledition" />
   <include package="ecreall.helpers.testing" />
   <include package="ecreall.helpers.upgrade" />
   <include package="ecreall.trashcan" />
