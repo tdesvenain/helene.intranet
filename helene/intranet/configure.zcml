@@ -25,7 +25,6 @@
   <include package="Products.OpenXml" />
   <include package="atreal.monkeyplone" />
   <include package="collective.documentviewer" />
-  <include package="collective.edm.listing" />
   <include package="collective.favorites" />
   <include package="collective.mtrsetup" />
   <include package="collective.portlet.customizablerecent" />
